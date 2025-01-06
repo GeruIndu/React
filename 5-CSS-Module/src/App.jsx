@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ErrorMessage from './components/ErrorMessage'
 import ItemLists from './components/ItemLists'
+import './App.css'
 
 function App() {
   
