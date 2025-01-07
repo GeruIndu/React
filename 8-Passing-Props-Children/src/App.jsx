@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Container>
-        <h1>Healthy Foods</h1>
+        <h1 style={{'textAlign' : 'center'}}>Healthy Foods</h1>
         <ErrorMessage foodItems = {items} />
         <ItemLists foodItems = {items} />
       </Container>
