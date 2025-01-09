@@ -1,0 +1,17 @@
+input {
+    width: 100%;
+}
+
+.kg-button {
+    min-width: 80px;
+}
+
+.kg-row {
+    margin: 10px 5px;
+}
+
+.todo-container {
+    width: 600px;
+    min-width: 40%;
+    margin-top: 20px;
+}
