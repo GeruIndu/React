@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdAssignmentAdd } from "react-icons/md";
 
 function AddTodo( {onNewItem} ) {
 
@@ -25,18 +26,20 @@ function AddTodo( {onNewItem} ) {
           <div className="col-6">
             <input type="text" placeholder="Enter Todo Here" 
                 onChange={handleChangeName}
+                value={todoName}
             />
           </div>
           <div className="col-4">
             <input type="date" 
                 onChange={handleChangeDate}
+                value={todoDate}
             />
           </div>
           <div className="col-2">
             <button type="button" className="btn btn-success kg-button"
                 onClick={handleAddClick}
             >
-              Add
+              <MdAssignmentAdd />
             </button>
           </div>
         </div>

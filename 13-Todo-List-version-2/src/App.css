@@ -8,10 +8,14 @@ input {
 
 .kg-row {
     margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .todo-container {
     width: 600px;
     min-width: 40%;
-    margin-top: 20px;
+    margin: 20px;
+    padding: 5px;
 }
