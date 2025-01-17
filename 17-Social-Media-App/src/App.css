@@ -1,0 +1,29 @@
+.main-container {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+}
+
+.myCard {
+    margin: 20px 40px;
+}
+
+.tags {
+    margin: 10px;
+}
+
+.mybtn {
+    margin: 0 5px;
+}
+
+.del {
+    cursor: pointer;
+}
+
+.create-post {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
