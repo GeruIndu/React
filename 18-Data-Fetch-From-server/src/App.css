@@ -1,0 +1,40 @@
+.main-container {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+}
+
+.allPost {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myCard {
+    margin: 20px 20px;
+    margin-left: 40px;
+}
+
+.tags {
+    margin: 10px;
+}
+
+.mybtn {
+    margin: 0 5px;
+    margin-bottom: 5px;
+}
+
+.del {
+    cursor: pointer;
+}
+
+.create-post {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.empty {
+    margin: 100px 0px;
+}
