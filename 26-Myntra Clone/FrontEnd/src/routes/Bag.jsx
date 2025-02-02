@@ -19,8 +19,8 @@ const Bag = () => {
   };
   return (
     <main>
-      <div class="bag-page">
-        <div class="bag-items-container">
+      <div className="bag-page">
+        <div className="bag-items-container">
           <BagItems item={item} />
         </div>
       </div>
