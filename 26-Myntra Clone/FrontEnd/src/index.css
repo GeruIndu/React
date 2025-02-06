@@ -401,3 +401,8 @@ a.action_container:link {
     height: 14px;
     cursor: pointer;
 }
+
+
+.loading {
+    margin: 150px 0px;
+}

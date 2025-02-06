@@ -7,7 +7,7 @@ import fetchStatus from './FetchStatus';
 const myntraStore = configureStore({
     reducer: {
         items: itemSlice.reducer,
-        fetch: fetchStatus.reducer,
+        fetchStatus: fetchStatus.reducer,
     }
 })
 

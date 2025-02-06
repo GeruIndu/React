@@ -4,23 +4,20 @@ import {
 
 
 const fetchStatus = createSlice({
-    name: 'fetch',
+    name: 'fetchStatus',
     initialState: {
         fetchDone: false,
         currentlyFetching: false,
     },
     reducers: {
         markFetchDone: (state) => {
-            return state.fetchDone = true;
+            state.fetchDone = true;
         },
 
         markFetchStart: (state) => {
-            return state.currentlyFetching = true;
+            state.currentlyFetching = true
         },
-
-        markFetchStoped: (state) => {
-            return state.currentlyFetching = false;
-        }
+        markFetchStoped: (state) => void(state.currentlyFetching = false),
     }
 })
 

@@ -4,11 +4,11 @@ import { fetchStatusActions } from "../store/FetchStatus";
 import { itemActions } from "../store/itemSlice";
 
 const FetchItems = () => {
-  const fetched = useSelector((store) => store.fetch);
+  const fetcheStatus = useSelector((store) => store.fetchStatus);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (fetched.fetchDone == true) return;
+    if (fetcheStatus.fetchDone === true) return;
 
     const controller = new AbortController();
     const signal = controller.signal;
@@ -20,7 +20,7 @@ const FetchItems = () => {
       .then((data) => {
         dispatch(itemActions.addInitialItems(data.items));
         dispatch(fetchStatusActions.markFetchStoped());
-        console.log(data.items);
+        dispatch(fetchStatusActions.markFetchDone());
       })
       .catch((err) => console.log(err));
 
