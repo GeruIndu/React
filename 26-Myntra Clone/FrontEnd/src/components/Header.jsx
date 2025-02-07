@@ -1,8 +1,11 @@
 import { CgProfile } from "react-icons/cg";
 import { FaHeart, FaBagShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const bag = useSelector((store) => store.bag);
+
   return (
     <>
       <header>
@@ -34,19 +37,19 @@ const Header = () => {
         </div>
         <div className="action_bar">
           <div className="action_container">
-          <CgProfile />
+            <CgProfile />
             <span className="action_name">Profile</span>
           </div>
 
           <div className="action_container">
-          <FaHeart />
+            <FaHeart />
             <span className="action_name">Wishlist</span>
           </div>
 
           <Link className="action_container" to="/bag">
-          <FaBagShopping />
+            <FaBagShopping />
             <span className="action_name">Bag</span>
-            <span className="bag-item-count">0</span>
+            <span className="bag-item-count">{bag.length}</span>
           </Link>
         </div>
       </header>

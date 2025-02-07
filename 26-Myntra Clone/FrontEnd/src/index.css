@@ -406,3 +406,19 @@ a.action_container:link {
 .loading {
     margin: 150px 0px;
 }
+
+.empty-container {
+    margin: 150px 0px;
+
+}
+
+.empty {
+    margin: auto;
+    font-size: 40px;
+}
+
+.mybtn {
+    margin-top: 10px;
+    padding: 10px 24px;
+    font-size: 23px;
+}
